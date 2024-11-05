@@ -9,8 +9,8 @@ public class Versenyzo
     public string Kategoria { get; set; }
     public Dictionary<string, TimeSpan> VersenyIdok { get; set; }
 
-    public override string ToString() => 
-        $"[{RajtSzam}] {Nev} ({Kategoria})";
+    public override string ToString() =>
+        $"[{RajtSzam}] {Nev} ({Kategoria}, {(Nem ? "férfi" : "nő")})";
 
     public Versenyzo(string sor)
     {
